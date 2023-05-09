@@ -1,4 +1,4 @@
-Feature: Checkout Flow- As a customer the user is able login, add the product into the cart, add address and reach to the checkout page
+Feature: Checkout Flow- As a customer the user is able search and add the product into the cart, add address and reach to the checkout page
 
 Background:
   Given I am on the homepage of the website "https://thegivingmovement.com/" and close the offer popup
