@@ -48,8 +48,8 @@ The `yarn.lock` file lists the exact version of each dependency used in the proj
 ### Getting started
 To get started, clone this repository and install the dependencies:
 
-git clone https://github.com/TheGivingMovementDev/qa-web-automation.git
-cd qa-web-automation
+git clone https://github.com/prgupta1995/Test-automation-cypress-bdd.git
+cd Test-automation-cypress-bdd
 yarn install
 
 ## We can then open the tests using Cypress:
