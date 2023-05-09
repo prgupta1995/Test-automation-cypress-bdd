@@ -1,4 +1,4 @@
-# TGM web automation
+# Web automation
 
 ### Technologies used
 This project uses [Cypress](https://www.cypress.io/) and [Cucumber](https://cucumber.io/)
