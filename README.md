@@ -17,6 +17,7 @@ The project has the following dependencies:
 ### Folder structure
 The project has the following file structure:
 
+```
 cypress/
     e2e/
         features/
@@ -33,6 +34,7 @@ cypress.config.js
 package.json
 README.md
 yarn.lock
+```
 
 The `e2e` folder contains the feature file and the step definitions that implement the test.
 The `page-objects` folder contains the page objects that implement the test.
