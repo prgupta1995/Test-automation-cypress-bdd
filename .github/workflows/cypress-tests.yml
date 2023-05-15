@@ -16,7 +16,7 @@ jobs:
       - name: Install Node.js and Yarn
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '18.16.0'
           # Install Yarn as well
           # Note: this step may not be necessary if you're using a Node.js version that already includes Yarn, such as Node.js v15+
           cache: 'yarn'
