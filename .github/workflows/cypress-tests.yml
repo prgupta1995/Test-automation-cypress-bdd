@@ -1,30 +1,26 @@
 # Basic workflow to get you started with the github actions
 name: Run Cypress Tests
 
-on:
-  push:
-    branches:
-      - main
+on: [push, pull_request]
 
 jobs:
   cypress-tests:
     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Install Node.js and Yarn
-        uses: actions/setup-node@v2
-        with:
-          node-version: '18.16.0'
-          # Install Yarn as well
-          # Note: this step may not be necessary if you're using a Node.js version that already includes Yarn, such as Node.js v15+
-          cache: 'yarn'
-          # Use Yarn instead of npm
-          registry-url: 'https://registry.yarnpkg.com'
-
-      - name: Install Cypress
-        run: yarn add cypress
-
-      - name: Run Cypress Tests
-        run: yarn run cypress:run
+     steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+        
+    - name: Install Yarn
+      run: npm install -g yarn
+      
+    - name: Build and test
+      run: |
+        yarn install
+        yarn build
+        yarn test
