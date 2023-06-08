@@ -22,5 +22,4 @@ jobs:
     - name: Build and test
       run: |
         yarn install
-        yarn build
-        yarn test
+        yarn cypress:run
